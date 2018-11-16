@@ -11,7 +11,7 @@ tags:
 系统环境：一台Windows 2012 Server，一台Windows XP，一台Windows XP的克隆。
 
 ### 问题描述
-Windows 2012 Server已部署完成，为了测试其可用性。 需要将两台Windows XP主机添加进新建的域中。  
+Windows 2012 Server域控服务器已部署完成，为了测试其可用性。 需要将两台Windows XP主机添加进新建的域中。  
 其中，一台Windows XP的，添加域成功。但克隆都那台Windows XP 添加域失败。如下图：
 ![add_d_error.png](/images/001_add_d_error.png)
 
