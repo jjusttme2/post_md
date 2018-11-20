@@ -24,7 +24,7 @@ Windows 2012 Server域控服务器已部署完成，为了测试其可用性。 
 
 SID(Security Identifiers) 翻译过来就叫作安全标识符。它是标识用户、组和计算机帐户的唯一的号码。
 
-#### 重复的SID
+#### 重复的SID引发的问题
 *In a Microsoft Windows Server network, duplicate SIDs can cause problems. Issues such as WSUS incompatability, Volume Licence key activation problems as well errors in Microsoft Office products. Other non Microsoft products such as Citrix do not work correctly on environments with duplidated SID.*
 
 如果存在两个同样SID的用户，这两个帐户将被鉴别为同一个帐户。所以，克隆的Windows XP其SID与被克隆的Windows XP是完全相同的。如果不联网，相同的SID不会有问题。如果联网呢？
@@ -33,7 +33,7 @@ SID(Security Identifiers) 翻译过来就叫作安全标识符。它是标识用
 
 所以，对于clone的Windows主机，我们需要使用工具来自动修改SID，这里使用Sysprep。
 
-#### 使用Sysprep，产生新的SID
+#### 产生新的SID
 0, 工具为Windows自带，无需安装Sysprep。 
 
 1，首先使用右键，以管理员身份运行。  
